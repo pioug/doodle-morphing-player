@@ -1,0 +1,23 @@
+{
+  "name": "doodle-morphing-player",
+  "version": "1.0.0",
+  "description": "Player animation in Material Design demonstration",
+  "scripts": {
+    "start": "webpack-dev-server --hot  --inline"
+  },
+  "author": "Gilles Piou <gilles.piou@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.4.3",
+    "angular-animate": "^1.4.3",
+    "css-loader": "^0.15.6",
+    "html-loader": "^0.3.0",
+    "ngtemplate-loader": "^1.3.0",
+    "node-sass": "^3.2.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^2.0.0",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+}

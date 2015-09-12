@@ -1,0 +1,35 @@
+<div>
+  <section class="player-cover">
+    <img src="cover.jpg">
+  </section>
+  <section class="player-main">
+    <div class="player-progress">
+      <div class="player-progress-bar" style="width: {{ currentTime / duration * 100 || 0 }}%"></div>
+      <div class="player-progress-cursor" style="left: calc({{ currentTime / duration * 100 || 0 }}% - 5px)"></div>
+    </div>
+    <div class="player">
+      <div class="player-title">
+        <h1>Cocoon</h1>
+        <h2>Take Off</h2>
+      </div>
+      <div class="player-controls-container">
+        <div class="player-controls-background"></div>
+        <div class="player-controls">
+          <div class="player-controls-time fade-in" ng-show="playing"><em>{{ currentTime | date: 'mm:ss' }}</em> / {{ duration | date: 'mm:ss' }}</div>
+          <i class="player-control material-icons fade-in left" ng-click="restart()" ng-show="playing">skip_previous</i>
+          <i class="player-control material-icons" ng-click="toggle()">{{ playing ? 'pause' : 'play_arrow' }}</i>
+          <i class="player-control material-icons fade-in right" ng-click="restart()" ng-show="playing">skip_next</i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="player-footer">
+    <div class="player-footer-slider">
+      <div class="player-footer-face">
+        Cocoon
+        <em class="player-footer-title">Take Off</em>
+        <i class="icon-equalizer"></i>
+        </div>
+      <div class="player-footer-face">My Friends All Died in a Plane Crash</div>
+  </footer>
+</div>
